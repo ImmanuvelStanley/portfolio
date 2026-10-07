@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Immanuvel Stanley A | Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Immanuvel Stanley A — Full Stack Developer building modern web applications, scalable back ends, and intelligent systems.">
+  <meta name="keywords" content="Immanuvel Stanley, Full Stack Developer, React, Next.js, TypeScript, FastAPI, Python, WebSockets, CAN Bus, Chennai">
+  <meta name="author" content="Immanuvel Stanley A">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Immanuvel Stanley A | Full Stack Developer">
+  <meta property="og:description" content="Portfolio of Immanuvel Stanley A — Full Stack Developer building modern web applications, scalable back ends, and intelligent systems.">
+  <meta property="og:image" content="assets/images/immanuvel.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='28' fill='%23C89B7B'/><text x='50%' y='67%' font-size='48' font-family='sans-serif' font-weight='800' fill='%23161616' text-anchor='middle'>IS</text></svg>">
+
+  <!-- Stylesheet -->
+    <!-- Cache Control (Ensures instant reload of latest styles/scripts) -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    (function() {
+      try {
+        var navEntries = performance.getEntriesByType && performance.getEntriesByType('navigation');
+        var isReload = (navEntries && navEntries[0] && navEntries[0].type === 'reload') ||
+                       (performance.navigation && performance.navigation.type === 1);
+        var savedY = parseInt(sessionStorage.getItem('portfolio_backflow_origin_y') || '0', 10);
+        var savedPath = sessionStorage.getItem('portfolio_backflow_path');
+        var savedTime = parseInt(sessionStorage.getItem('portfolio_backflow_time') || '0', 10);
+        var isRecent = (Date.now() - savedTime) < 12000;
+        if ((isReload || (savedPath === window.location.pathname && isRecent)) && savedY > 100) {
+          window.scrollTo(0, savedY);
+          window.__PORTFOLIO_BACKFLOW_START_Y__ = savedY;
+        } else {
+          window.scrollTo(0, 0);
+        }
+      } catch (e) {
+        window.scrollTo(0, 0);
+      }
+      if (window.location.hash) {
+        try {
+          history.replaceState(null, '', window.location.pathname + window.location.search);
+        } catch (e) {}
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles/style.css?v=9.1">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Immanuvel Stanley A",
+    "jobTitle": "Full Stack Developer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chennai",
+      "addressCountry": "India"
+    },
+    "knowsAbout": ["Full-Stack Development", "Artificial Intelligence", "FastAPI", "React", "Next.js", "WebSockets", "Computer Vision", "Automotive Diagnostics", "CAN Bus"]
+  }
+  </script>
+</head>
+<body class="selection:bg-brand-accent selection:text-brand-dark">
+
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress-bar"></div>
+
+  <!-- Full-Page Interactive Neural Constellation Canvas (Inherited from Enquiry Box) -->
+  <canvas id="page-network-canvas" class="page-network-canvas" aria-hidden="true"></canvas>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR (NOVA ASTRO SIGNATURE FLOATING NAVBAR)
+       ========================================================================= -->
+  <header class="navbar-wrap">
+    <div class="container navbar-container">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#skills" class="ui-nav-bar-link">Skills</a></li>
+          <li><a href="#experience" class="ui-nav-bar-link">Experience &amp; Education</a></li>
+          <li><a href="#projects" class="ui-nav-bar-link">Projects</a></li>
+          <li><a href="#beyond-code" class="ui-nav-bar-link">Beyond Code</a></li>
+          <li><a href="#certifications" class="ui-nav-bar-link">Credentials</a></li>
+          <li><a href="#contact" class="ui-nav-bar-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Nova Sliding CTA Button -->
+        <a href="#contact" class="ui-button ui-button-primary btn-sm">
+          <span class="ui-button-text-wrap">
+            <span class="ui-button-text-default">Start a Project</span>
+            <span class="ui-button-text-hover">Let's Talk &rarr;</span>
+          </span>
+        </a>
+
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open Navigation">
+          <img src="assets/images/icons/menu.svg" alt="Menu" width="20" height="20" style="display:inline-block; filter: invert(0.85);">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. HERO SECTION (NOVA ASTRO EDITORIAL + WORKBENCH)
+       ========================================================================= -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1 class="hero-title" id="hero-title" aria-label="IMMANUVEL STANLEY . A">
+          <span class="hero-title-text" id="hero-title-text">IMMANUVEL STANLEY<span class="hero-title-initial"><span class="hero-title-dot">.</span> A</span></span>
+        </h1>
+        <div class="hero-role-flipper-wrap" aria-label="Full Stack Developer and Automotive Technician">
+          <div class="hero-role-flipper" id="hero-role-flipper" title="Hover to view Automotive Technician">
+            <!-- Front Face: Full Stack Developer (Default) -->
+            <div class="role-flip-card role-flip-front">
+              <span class="role-badge-dot dot-it"></span>
+              <span class="role-title-text role-it">Full Stack Developer</span>
+            </div>
+            <!-- Back Face: Automotive Technician (On Hover) -->
+            <div class="role-flip-card role-flip-back">
+              <span class="role-badge-dot dot-auto"></span>
+              <span class="role-title-text role-auto">Automotive Technician</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="hero-description">
+          Computer Science undergraduate and aspiring Full Stack Developer with hands-on experience building modern web applications using React, Next.js, TypeScript, and FastAPI. Combined with practical expertise in automotive electrical diagnostics and CAN bus systems, I bring strong engineering fundamentals and a disciplined, root-cause troubleshooting mindset—eager to learn, contribute, and build reliable software in a collaborative team.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="ui-button ui-button-primary">
+            <span class="ui-button-text-wrap">
+              <span class="ui-button-text-default">Explore Selected Work</span>
+              <span class="ui-button-text-hover">View Architecture &rarr;</span>
+            </span>
+          </a>
+          <button type="button" class="ui-button ui-button-brown open-resume-modal-btn">
+            <span class="ui-button-text-wrap">
+              <span class="ui-button-text-default">Resume</span>
+              <span class="ui-button-text-hover">Download PDF &darr;</span>
+            </span>
+          </button>
+        </div>
+
+        <div class="hero-meta-row">
+          <div class="hero-status-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for Immediate Roles</span>
+          </div>
+
+          <div class="hero-location-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Chennai, India</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO PROFILE IMAGE CARD -->
+      <div class="hero-photo-card">
+        <img src="assets/images/immanuvel.jpg" alt="Immanuvel Stanley" class="hero-profile-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. TECHNICAL SKILLS MATRIX (NOVA ASTRO SKILLS MATRIX)
+       ========================================================================= -->
+  <section id="skills" class="section" style="background:var(--color-surface-dim);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title smooth-reveal">Technical Mastery Matrix</h2>
+        <p class="section-subtitle">A verified engineering stack across disciplines. No vanity percentage bars—only frameworks proven in production applications.</p>
+      </div>
+
+      <div class="skills-container">
+        <!-- Tab Navigation -->
+        <div class="skills-tabs-nav">
+          <button type="button" class="skill-tab-btn active" data-group="frontend">Frontend Engineering</button>
+          <button type="button" class="skill-tab-btn" data-group="backend">Backend &amp; APIs</button>
+          <button type="button" class="skill-tab-btn" data-group="databases">Databases &amp; Modeling</button>
+          <button type="button" class="skill-tab-btn" data-group="tools">Tools &amp; Concepts</button>
+          <button type="button" class="skill-tab-btn" data-group="ai">AI / ML &amp; Data</button>
+          <button type="button" class="skill-tab-btn" data-group="cloud">Cloud &amp; DevOps</button>
+          <button type="button" class="skill-tab-btn" data-group="hardware">Hardware &amp; Diagnostics</button>
+        </div>
+
+        <!-- Panel 1: Frontend -->
+        <div class="skills-panel active" data-panel="frontend">
+          <div class="skills-chips-grid">
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/react.svg" alt="React & Next.js">
+              </div>
+              <div class="skill-info">
+                <h4>React.js &amp; Next.js</h4>
+                <span>App Router, Server Components, SSR &amp; Web Workers</span>
+                <span class="skill-proof-tag">&#10003; Proven in CODEPLUS &amp; Elementro</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/javascript.svg" alt="JavaScript & TypeScript">
+              </div>
+              <div class="skill-info">
+                <h4>JavaScript &amp; TypeScript</h4>
+                <span>Modern ES6+, Strict Typing, Advanced Generics, AST Types</span>
+                <span class="skill-proof-tag">&#10003; Interactive &amp; Type-Safe Apps</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/html5.svg" alt="HTML5 & CSS3">
+              </div>
+              <div class="skill-info">
+                <h4>HTML5 / CSS3</h4>
+                <span>Semantic Markup, Modern Flexbox/Grid, Canvas API, Responsive UX</span>
+                <span class="skill-proof-tag">&#10003; Pixel-Perfect Layouts</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/tailwindcss.svg" alt="Tailwind CSS">
+              </div>
+              <div class="skill-info">
+                <h4>Tailwind CSS</h4>
+                <span>Design Tokens, Micro-Physics, Responsive Systems</span>
+                <span class="skill-proof-tag">&#10003; Proven in Auratrade</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: Backend -->
+        <div class="skills-panel" data-panel="backend">
+          <div class="skills-chips-grid">
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/python.svg" alt="Python">
+              </div>
+              <div class="skill-info">
+                <h4>Python (Core &amp; Asyncio)</h4>
+                <span>Advanced Concurrency, Multiprocessing, OOP, High-Throughput Logic</span>
+                <span class="skill-proof-tag">&#10003; Scalable Backend Pipelines</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/api.svg" alt="RESTful APIs">
+              </div>
+              <div class="skill-info">
+                <h4>RESTful APIs</h4>
+                <span>Endpoint Routing, HTTP Contracts, JSON Serialization, Auth</span>
+                <span class="skill-proof-tag">&#10003; Multi-Service Integrations</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/fastapi.svg" alt="FastAPI">
+              </div>
+              <div class="skill-info">
+                <h4>FastAPI</h4>
+                <span>Async IO, High-Concurrency Endpoints, Pydantic v2 Validation</span>
+                <span class="skill-proof-tag">&#10003; High-Performance Services</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/websocket.svg" alt="WebSockets & Node.js">
+              </div>
+              <div class="skill-info">
+                <h4>WebSockets &amp; Node.js</h4>
+                <span>Sub-25ms Real-Time Bi-Directional Streaming, Event Loops</span>
+                <span class="skill-proof-tag">&#10003; Proven in Auratrade Gateway</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3: AI & Data -->
+        <div class="skills-panel" data-panel="ai">
+          <div class="skills-chips-grid">
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/pytorch.svg" alt="PyTorch">
+              </div>
+              <div class="skill-info">
+                <h4>PyTorch &amp; CNNs</h4>
+                <span>Deep Vision, Transfer Learning, ResNet-50</span>
+                <span class="skill-proof-tag">&#10003; 94.2% IoU in MedVision</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/opencv.svg" alt="OpenCV">
+              </div>
+              <div class="skill-info">
+                <h4>Computer Vision</h4>
+                <span>OpenCV, Grad-CAM Heatmaps, DICOM Analysis</span>
+                <span class="skill-proof-tag">&#10003; 15,000+ Radiographs Processed</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/ai_models.svg" alt="Multi-Model LLMs">
+              </div>
+              <div class="skill-info">
+                <h4>Multi-Model LLMs</h4>
+                <span>Groq Llama 3.3, DeepSeek R1, Claude 3.5 Sonnet</span>
+                <span class="skill-proof-tag">&#10003; Codeplus NOVA AST Review</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/pandas.svg" alt="Pandas">
+              </div>
+              <div class="skill-info">
+                <h4>Vector Search &amp; Pandas</h4>
+                <span>Embeddings, Similarity Search, Telemetry Crunching</span>
+                <span class="skill-proof-tag">&#10003; pgvector &amp; Fast Search</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 4: Cloud & DevOps -->
+        <div class="skills-panel" data-panel="cloud">
+          <div class="skills-chips-grid">
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/aws_logo.svg" alt="AWS Cloud" style="width:26px;">
+              </div>
+              <div class="skill-info">
+                <h4>AWS Cloud</h4>
+                <span>EC2, S3, IAM, CloudFront, VPC Routing</span>
+                <span class="skill-proof-tag">&#10003; AWS Certified ML Track</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/docker.svg" alt="Docker">
+              </div>
+              <div class="skill-info">
+                <h4>Docker Containers</h4>
+                <span>Multi-stage Builds, Container Optimization</span>
+                <span class="skill-proof-tag">&#10003; Production Deployment</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/githubactions.svg" alt="GitHub Actions">
+              </div>
+              <div class="skill-info">
+                <h4>CI/CD &amp; GitHub Actions</h4>
+                <span>Automated Quality Gates, Jest Testing, Linting</span>
+                <span class="skill-proof-tag">&#10003; 36 Automated Tests</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/redis.svg" alt="Redis">
+              </div>
+              <div class="skill-info">
+                <h4>Redis Pub/Sub</h4>
+                <span>In-Memory Broker, Low-Latency Message Queues</span>
+                <span class="skill-proof-tag">&#10003; AuraTrade Micro-Tick Pipeline</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel: Databases & Modeling -->
+        <div class="skills-panel" data-panel="databases">
+          <div class="skills-chips-grid">
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/supabase.svg" alt="Supabase">
+              </div>
+              <div class="skill-info">
+                <h4>Supabase</h4>
+                <span>Row-Level Security, Realtime Tables, PostgreSQL Edge, Auth</span>
+                <span class="skill-proof-tag">&#10003; Modern Cloud Database &amp; Auth</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/mysql.svg" alt="MySQL">
+              </div>
+              <div class="skill-info">
+                <h4>MySQL</h4>
+                <span>Relational Modeling, Query Optimization, Execution Plans, ACID</span>
+                <span class="skill-proof-tag">&#10003; High-Volume Relational Schemas</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/mongodb.svg" alt="MongoDB Atlas">
+              </div>
+              <div class="skill-info">
+                <h4>MongoDB Atlas</h4>
+                <span>NoSQL Schemas, Flexible Document Models, Aggregation Pipelines</span>
+                <span class="skill-proof-tag">&#10003; Proven in Auratrade Telemetry</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/postgresql.svg" alt="PostgreSQL">
+              </div>
+              <div class="skill-info">
+                <h4>PostgreSQL</h4>
+                <span>Relational Modeling, Indexing, JSONB, Enterprise Scalability</span>
+                <span class="skill-proof-tag">&#10003; High-Reliability Storage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel: Tools & Concepts (from updated IT resume) -->
+        <div class="skills-panel" data-panel="tools">
+          <div class="skills-chips-grid">
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/github.svg" alt="Git & GitHub">
+              </div>
+              <div class="skill-info">
+                <h4>Git / GitHub Version Control</h4>
+                <span>Feature Branching, Rebase, Pull Requests, Code Reviews, Release Tags</span>
+                <span class="skill-proof-tag">&#10003; Industry Standard Version Control</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/api.svg" alt="RESTful APIs">
+              </div>
+              <div class="skill-info">
+                <h4>RESTful APIs &amp; Networking</h4>
+                <span>Contract-First Design, JSON Schemas, CRUD Operations, Auth Bearers</span>
+                <span class="skill-proof-tag">&#10003; Production-Grade System APIs</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/figma.svg" alt="Figma (UI/UX)">
+              </div>
+              <div class="skill-info">
+                <h4>Figma (UI/UX Design)</h4>
+                <span>Interactive Wireframes, Component Systems, Usability Prototyping</span>
+                <span class="skill-proof-tag">&#10003; Proven at Retech Solutions (3 Products)</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/githubactions.svg" alt="Agile & SDLC">
+              </div>
+              <div class="skill-info">
+                <h4>Agile &amp; SDLC Methodologies</h4>
+                <span>Sprint Planning, Requirements Translation, Cross-Functional Teamwork</span>
+                <span class="skill-proof-tag">&#10003; Production Engineering Lifecycle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 6: Hardware & Diagnostics -->
+        <div class="skills-panel" data-panel="hardware">
+          <div class="skills-chips-grid">
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/circuit.svg" alt="Circuit Analysis">
+              </div>
+              <div class="skill-info">
+                <h4>Circuit Analysis</h4>
+                <span>Schematic Tracing, Multimeter, Voltage Drop Isolation</span>
+                <span class="skill-proof-tag">&#10003; Physical Ground Fault Finding</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/obd2.svg" alt="OBD-II Scanning">
+              </div>
+              <div class="skill-info">
+                <h4>OBD-II &amp; Vehicle Scanning</h4>
+                <span>DTC Fault Codes, ECU Live Sensor PIDs</span>
+                <span class="skill-proof-tag">&#10003; Cars Only Certified</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/canbus.svg" alt="CAN Bus">
+              </div>
+              <div class="skill-info">
+                <h4>CAN Bus Protocol</h4>
+                <span>Differential Oscilloscope Signal Inspection (CAN-H/L)</span>
+                <span class="skill-proof-tag">&#10003; 500kbps Network Debugging</span>
+              </div>
+            </div>
+            <div class="skill-chip-card">
+              <div class="skill-icon-wrap">
+                <img src="assets/images/icons/diagnostics.svg" alt="Diagnostics">
+              </div>
+              <div class="skill-info">
+                <h4>Electrical Fault-Finding</h4>
+                <span>Relay Logic, Parasitic Drain, Loom Isolation</span>
+                <span class="skill-proof-tag">&#10003; Root-Cause Diagnostics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. EXPERIENCE & EDUCATION TIMELINE
+       ========================================================================= -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title smooth-reveal">Experience &amp; Education</h2>
+        <p class="section-subtitle">Bridging front-end interface velocity with formal Computer Science principles and physical diagnostics.</p>
+      </div>
+
+      <div class="timeline-wrap">
+        <div class="timeline-connector-line"></div>
+
+        <!-- Experience 1: Retech Solutions -->
+        <div class="timeline-item smooth-reveal reveal-delay-1">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <h3 class="timeline-role">UI/UX Designer Intern</h3>
+              <span class="badge badge-cyan">Jun 2024 &ndash; Jul 2024</span>
+            </div>
+            <div class="timeline-org">
+              <span>Retech Solutions</span>
+              <span>• Chennai, India</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Collaborated with a cross-functional development team throughout the software development life cycle (SDLC), translating requirements into technical specifications within an Agile workflow.</li>
+              <li>Designed and prototyped UI components in Figma, improving user flow consistency and usability across 3 products through iterative feedback and revision.</li>
+              <li>Assisted by senior developers in debugging, testing, and issue resolution, building hands-on experience troubleshooting production code.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education: Bachelor of Engineering -->
+        <div class="timeline-item smooth-reveal reveal-delay-2">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <h3 class="timeline-role">Bachelor of Engineering in Computer Science</h3>
+              <span class="badge badge-emerald">2022 &ndash; 2026</span>
+            </div>
+            <div class="timeline-org">
+              <span>Saveetha Engineering College</span>
+              <span>• CGPA: 7.8</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Pursued Bachelor of Engineering in Computer Science at Saveetha Engineering College, Chennai, maintaining an academic standing of 7.8 CGPA.</li>
+              <li>Core Focus: Full-Stack Web Development, Scalable Software Architectures, Machine Learning, Data Structures &amp; Algorithms, and Database Management.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. SELECTED WORK / PROJECTS (NOVA 2REM CURVED CARDS)
+       ========================================================================= -->
+  <section id="projects" class="section" style="background:var(--color-surface-dim);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title smooth-reveal">Production &amp; AI Showcase</h2>
+        <p class="section-subtitle">Real products with live users, measurable performance metrics, real-time WebSockets, and multi-model AI architectures.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button type="button" class="filter-btn active" data-filter="all">
+          <span class="filter-dot filter-dot-all"></span>
+          <span>All Projects</span>
+          <span class="filter-count">5</span>
+        </button>
+        <button type="button" class="filter-btn" data-filter="web">
+          <span class="filter-dot filter-dot-web"></span>
+          <span>Web Applications</span>
+          <span class="filter-count">3</span>
+        </button>
+        <button type="button" class="filter-btn" data-filter="ai">
+          <span class="filter-dot filter-dot-ai"></span>
+          <span>AI / ML Systems</span>
+          <span class="filter-count">4</span>
+        </button>
+        <button type="button" class="filter-btn" data-filter="vision">
+          <span class="filter-dot filter-dot-vision"></span>
+          <span>Computer Vision</span>
+          <span class="filter-count">1</span>
+        </button>
+      </div>
+
+      <!-- FLAGSHIP PROJECT 1: AURATRADE -->
+      <article class="project-flagship-card smooth-reveal" data-category="web ai">
+        <div class="flagship-media">
+          <img src="assets/images/auratrade.jpg" alt="AuraTrade Real-Time Financial Workstation" class="ui-media-zoom">
+          <div class="media-live-badge">
+            <span class="media-live-dot"></span>
+            <span>LIVE WORKSTATION</span>
+          </div>
+        </div>
+
+        <div class="flagship-content">
+          <span class="project-category">Live Stock Market &amp; Paper Trading Workstation</span>
+          <h3 class="project-title">AuraTrade</h3>
+          <p class="project-tagline">
+            A real-time stock trading platform built for traders to track live market prices with zero lag, practice paper trading with virtual money, and discover high-probability opportunities using automated AI predictions.
+          </p>
+
+          <div class="project-metrics-callout">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            <span>6–25ms Tick Latency • 60 FPS Canvas Charting • Redis Pub/Sub</span>
+          </div>
+
+          <div class="project-tech-stack">
+            <span class="tech-tag">React 19</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Socket.IO</span>
+            <span class="tech-tag">Redis Pub/Sub</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">HTML5 Canvas</span>
+            <span class="tech-tag">TypeScript</span>
+          </div>
+
+          <div class="project-card-footer">
+            <button type="button" class="ui-button ui-button-primary btn-sm view-case-study-btn" data-slug="auratrade">
+              <span class="ui-button-text-wrap">
+                <span class="ui-button-text-default">View Case Study</span>
+                <span class="ui-button-text-hover">Read Deep Dive &rarr;</span>
+              </span>
+            </button>
+            <div class="project-links">
+              <a href="https://www.auratrade.in/" target="_blank" rel="noopener noreferrer" class="ui-button ui-button-accent btn-sm" title="Launch AuraTrade Live">
+                <span class="ui-button-text-wrap">
+                  <span class="ui-button-text-default">Launch Terminal</span>
+                  <span class="ui-button-text-hover">auratrade.in ↗</span>
+                </span>
+              </a>
+              <a href="https://github.com/ImmanuvelStanley/Auratrade" target="_blank" rel="noopener noreferrer" class="btn-icon" title="View Code on GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- SECONDARY PROJECTS GRID -->
+      <div class="projects-grid">
+
+        <!-- Project 2: Elementro -->
+        <article class="project-card smooth-reveal reveal-delay-1" data-category="web">
+          <div class="project-card-media">
+            <img src="assets/images/elementro.jpg" alt="Elementro Real-Time Component Sandbox" class="project-card-img">
+            <div class="media-live-badge">
+              <span class="media-live-dot cyan"></span>
+              <span>LIVE SANDBOX</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <span class="project-category">In-Browser React Playground &amp; Sandbox</span>
+            <h3 class="project-title" style="font-size:1.65rem;">Elementro</h3>
+            <p class="project-tagline">An instant browser sandbox that lets frontend developers code, test, and preview React components in real time without any local environment setup or slow build wait times.</p>
+            
+            <div class="project-metrics-callout">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+              <span>&lt;85ms Client Transpilation • 114KB Bundle</span>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">React 19</span>
+              <span class="tech-tag">Next.js 15</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">Web Workers</span>
+              <span class="tech-tag">Monaco Editor</span>
+            </div>
+
+            <div class="project-card-footer">
+              <button type="button" class="ui-button ui-button-secondary btn-sm view-case-study-btn" data-slug="elementro">
+                <span class="ui-button-text-wrap">
+                  <span class="ui-button-text-default">Case Study</span>
+                  <span class="ui-button-text-hover">Read More &rarr;</span>
+                </span>
+              </button>
+              <div class="project-links">
+                <a href="https://elementro.dev" target="_blank" rel="noopener noreferrer" class="ui-button ui-button-accent btn-sm" title="Launch elementro.dev">
+                  <span class="ui-button-text-wrap">
+                    <span class="ui-button-text-default">Live Demo</span>
+                    <span class="ui-button-text-hover">elementro.dev ↗</span>
+                  </span>
+                </a>
+                <a href="https://github.com/ImmanuvelStanley" target="_blank" rel="noopener noreferrer" class="btn-icon" title="View Code on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Codeplus NOVA -->
+        <article class="project-card smooth-reveal reveal-delay-2" data-category="ai web">
+          <div class="project-card-media">
+            <img src="assets/images/codeplus.jpg" alt="Codeplus NOVA AI Code Review" class="project-card-img">
+            <div class="media-live-badge">
+              <span class="media-live-dot amber"></span>
+              <span>MULTI-MODEL AI</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <span class="project-category">AI Code Review &amp; Security Auditor</span>
+            <h3 class="project-title" style="font-size:1.65rem;">Codeplus NOVA</h3>
+            <p class="project-tagline">An intelligent code assistant that automatically scans repositories for security vulnerabilities, catches critical bugs, and recommends fixes before pull requests reach production.</p>
+            
+            <div class="project-metrics-callout">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <span>Multi-Model AI (Groq/DeepSeek/Claude) • AST Parser</span>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">React 19</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Groq API</span>
+              <span class="tech-tag">DeepSeek R1</span>
+              <span class="tech-tag">Claude 3.5</span>
+              <span class="tech-tag">Jest</span>
+            </div>
+
+            <div class="project-card-footer">
+              <button type="button" class="ui-button ui-button-secondary btn-sm view-case-study-btn" data-slug="codeplus">
+                <span class="ui-button-text-wrap">
+                  <span class="ui-button-text-default">Case Study</span>
+                  <span class="ui-button-text-hover">Read More &rarr;</span>
+                </span>
+              </button>
+              <div class="project-links">
+                <a href="https://codeplus-two.vercel.app/" target="_blank" rel="noopener noreferrer" class="ui-button ui-button-accent btn-sm" title="Launch Codeplus Live (codeplus-two.vercel.app)">
+                  <span class="ui-button-text-wrap">
+                    <span class="ui-button-text-default">Live Demo</span>
+                    <span class="ui-button-text-hover">Live Preview ↗</span>
+                  </span>
+                </a>
+                <a href="https://github.com/ImmanuvelStanley/CODEPLUS" target="_blank" rel="noopener noreferrer" class="btn-icon" title="View Code on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: EcogenAI -->
+        <article class="project-card smooth-reveal reveal-delay-1" data-category="ai web">
+          <div class="project-card-media">
+            <img src="assets/images/ecogenai.jpg" alt="EcogenAI Logistics Dashboard" class="project-card-img">
+            <div class="media-live-badge">
+              <span class="media-live-dot"></span>
+              <span>SMART ROUTING</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <span class="project-category">Smart Fleet Route &amp; Fuel Optimizer</span>
+            <h3 class="project-title" style="font-size:1.65rem;">EcogenAI</h3>
+            <p class="project-tagline">A smart navigation engine that calculates the fastest and most fuel-efficient routes for delivery fleets, helping transport companies cut transit delays and reduce carbon emissions.</p>
+            
+            <div class="project-metrics-callout">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+              <span>-20% Fuel Consumption • 120ms Latency</span>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">Graph Theory</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+
+            <div class="project-card-footer">
+              <button type="button" class="ui-button ui-button-secondary btn-sm view-case-study-btn" data-slug="ecogenai">
+                <span class="ui-button-text-wrap">
+                  <span class="ui-button-text-default">Case Study</span>
+                  <span class="ui-button-text-hover">Read More &rarr;</span>
+                </span>
+              </button>
+              <div class="project-links">
+                <a href="https://github.com/ImmanuvelStanley/EcogenAI" target="_blank" rel="noopener noreferrer" class="btn-icon" title="View Code on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: MedVision -->
+        <article class="project-card smooth-reveal reveal-delay-2" data-category="ai vision">
+          <div class="project-card-media">
+            <img src="assets/images/medvision.jpg" alt="MedVision Diagnostic Imaging Interface" class="project-card-img">
+            <div class="media-live-badge">
+              <span class="media-live-dot cyan"></span>
+              <span>DICOM INFERENCE</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <span class="project-category">AI Chest X-Ray Diagnostic Assistant</span>
+            <h3 class="project-title" style="font-size:1.65rem;">MedVision</h3>
+            <p class="project-tagline">An AI-powered medical imaging assistant that helps doctors and radiologists quickly analyze chest X-rays to detect and pinpoint lung abnormalities with clear visual heatmaps.</p>
+            
+            <div class="project-metrics-callout">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>15,000+ DICOM Scans • 240ms Inference</span>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">CNN</span>
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Grad-CAM</span>
+            </div>
+
+            <div class="project-card-footer">
+              <button type="button" class="ui-button ui-button-secondary btn-sm view-case-study-btn" data-slug="medvision">
+                <span class="ui-button-text-wrap">
+                  <span class="ui-button-text-default">Case Study</span>
+                  <span class="ui-button-text-hover">Read More &rarr;</span>
+                </span>
+              </button>
+              <div class="project-links">
+                <a href="https://github.com/ImmanuvelStanley" target="_blank" rel="noopener noreferrer" class="btn-icon" title="View Code on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. BEYOND CODE (SYSTEMS DIAGNOSTICS & PHOSPHOR OSCILLOSCOPE)
+       ========================================================================= -->
+  <section id="beyond-code" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title smooth-reveal">Beyond Code: Physical Systems Diagnostics</h2>
+        <p class="section-subtitle">"I debug complex systems, whether it is a vehicle wiring harness or a distributed microservice."</p>
+      </div>
+
+      <div class="beyond-code-card" id="beyond-code-card">
+        <!-- High-Tech Animated PCB Copper Circuit Overlay -->
+        <div class="pcb-circuit-overlay" aria-hidden="true">
+          <svg class="pcb-circuit-svg" viewBox="0 0 1000 600" preserveAspectRatio="none">
+            <!-- Background passive circuit traces -->
+            <path class="pcb-trace" d="M -50 110 L 220 110 L 280 170 L 460 170 L 530 240 L 780 240 L 850 310 L 1050 310" />
+            <path class="pcb-trace" d="M -50 490 L 180 490 L 250 420 L 470 420 L 540 350 L 790 350 L 860 280 L 1050 280" />
+            <path class="pcb-trace" d="M 280 0 L 280 140 L 320 180 L 410 180 L 410 390 L 470 450 L 630 450 L 670 490 L 670 600" />
+            <path class="pcb-trace" d="M 720 0 L 720 150 L 760 190 L 920 190 L 960 230 L 960 600" />
+
+            <!-- Active CAN-H High Speed Pulse Path (Cyan 3.5V) -->
+            <path class="pcb-trace-active pcb-trace-canh" id="pcb-path-canh" d="M -20 220 L 210 220 L 270 280 L 510 280 L 570 220 L 820 220 L 880 280 L 1020 280" />
+
+            <!-- Active CAN-L Low Speed Pulse Path (Amber 1.5V) -->
+            <path class="pcb-trace-active pcb-trace-canl" id="pcb-path-canl" d="M -20 236 L 204 236 L 264 296 L 504 296 L 564 236 L 814 236 L 874 296 L 1020 296" />
+
+            <!-- PCB Vias / Solder Terminal Pads -->
+            <circle class="pcb-via" cx="210" cy="220" r="4.5" />
+            <circle class="pcb-via-core" cx="210" cy="220" r="2" />
+            <circle class="pcb-via" cx="204" cy="236" r="4.5" />
+            <circle class="pcb-via-core" cx="204" cy="236" r="2" />
+            <circle class="pcb-via" cx="510" cy="280" r="4.5" />
+            <circle class="pcb-via-core" cx="510" cy="280" r="2" />
+            <circle class="pcb-via" cx="504" cy="296" r="4.5" />
+            <circle class="pcb-via-core" cx="504" cy="296" r="2" />
+            <circle class="pcb-via" cx="820" cy="220" r="4.5" />
+            <circle class="pcb-via-core" cx="820" cy="220" r="2" />
+            <circle class="pcb-via" cx="814" cy="236" r="4.5" />
+            <circle class="pcb-via-core" cx="814" cy="236" r="2" />
+          </svg>
+          <div class="pcb-em-glow"></div>
+        </div>
+
+        <div class="beyond-code-content">
+          <span class="badge badge-amber" style="width:fit-content;margin-bottom:1rem;">Automotive &amp; Electrical Background</span>
+          <h3 class="beyond-code-hook">Hardware Troubleshooting Builds the Ultimate Software Debugging Mindset.</h3>
+          <p class="beyond-code-desc">
+            Most Computer Science graduates have only debugged software errors inside an IDE. My practical experience in automotive diagnostics means I have traced real-world physical ground faults, analyzed oscilloscope waveforms on CAN bus networks, and read complex circuit schematics.
+          </p>
+          <p class="beyond-code-desc">
+            Physical systems don't give you stack traces. When a distributed system fails, I don't guess—I isolate variables, verify telemetry signals, and pinpoint root causes with methodical precision.
+          </p>
+
+          <div class="beyond-code-tags">
+            <span class="tech-tag tech-tag-probe" data-signal="obd" title="Click or hover to probe OBD-II protocol layer">OBD-II Diagnostics</span>
+            <span class="tech-tag tech-tag-probe" data-signal="can" title="Click or hover to probe 500 kbps Differential CAN Bus">Differential CAN Bus</span>
+            <span class="tech-tag tech-tag-probe" data-signal="waveform" title="Click or hover to inspect CAN-H &amp; CAN-L square waves">CAN-H &amp; CAN-L Waveforms</span>
+            <span class="tech-tag tech-tag-probe" data-signal="relay" title="Click or hover to test electro-mechanical relay logic">Relay &amp; ECU Logic</span>
+            <span class="tech-tag tech-tag-probe" data-signal="certified" title="Cars Only Certified Diagnostic Specialist">Cars Only Certified</span>
+          </div>
+
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+            <a href="service.html" class="ui-button ui-button-primary btn-sm">
+              <span class="ui-button-text-wrap">
+                <span class="ui-button-text-default">Explore /service Page</span>
+                <span class="ui-button-text-hover">Hardware Suite &rarr;</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Diagnostic Simulation Tool -->
+        <div class="beyond-code-interactive">
+          <div class="scanner-screen">
+            <!-- Modern Header with CAN TX/RX LEDs -->
+            <div class="modern-scanner-header">
+              <div class="scanner-brand-tag">
+                <span class="scanner-led-dot"></span>
+                <span class="scanner-model">PRO-X7 Intelligent Diagnostics</span>
+                <div class="can-comm-leds" title="ISO 11898-2 CAN Transceiver High-Speed Bus Activity">
+                  <span class="comm-led led-tx" id="led-can-tx" title="Transmit: 0x7DF Polling Frames"><span class="comm-led-bulb"></span>TX</span>
+                  <span class="comm-led led-rx" id="led-can-rx" title="Receive: 0x7E8 ECU Payloads"><span class="comm-led-bulb"></span>RX</span>
+                </div>
+              </div>
+              <div class="scanner-network-status" id="sim-can-badge">
+                <span id="sim-can-status">500 kbps CAN Network Synced</span>
+              </div>
+            </div>
+
+            <!-- Modern Telemetry Deck with Live Meter Bars -->
+            <div class="scanner-telemetry-deck">
+              <div class="telemetry-card">
+                <div class="telemetry-card-label">Diagnostic Status</div>
+                <div class="telemetry-card-val" id="sim-dtc-wrap">
+                  <span class="status-pill status-healthy" id="sim-dtc-val">P0000 • Healthy</span>
+                </div>
+                <div class="telemetry-meter-bar"><div class="meter-fill meter-status" id="meter-status-fill"></div></div>
+              </div>
+              <div class="telemetry-card">
+                <div class="telemetry-card-label">Engine Speed</div>
+                <div class="telemetry-card-val">
+                  <span class="telemetry-number" id="sim-rpm-val">820</span>
+                  <span class="telemetry-unit">RPM</span>
+                  <span class="telemetry-subtag subtag-green" id="sim-rpm-sub">Idle OK</span>
+                </div>
+                <div class="telemetry-meter-bar"><div class="meter-fill meter-rpm" id="meter-rpm-fill"></div></div>
+              </div>
+              <div class="telemetry-card">
+                <div class="telemetry-card-label">System Voltage</div>
+                <div class="telemetry-card-val">
+                  <span class="telemetry-number" id="sim-volt-val">14.2</span>
+                  <span class="telemetry-unit">V</span>
+                  <span class="telemetry-subtag subtag-green" id="sim-volt-sub">Alternator OK</span>
+                </div>
+                <div class="telemetry-meter-bar"><div class="meter-fill meter-volt" id="meter-volt-fill"></div></div>
+              </div>
+            </div>
+
+            <!-- Modern Differential CAN Bus Oscilloscope with Math Channel -->
+            <div class="oscilloscope-canvas-wrap modern-scope" id="scope-wrap" title="CAN-H (3.5V) and CAN-L (1.5V) Differential Signal (Click or move cursor to probe)">
+              <div class="scope-header-overlay">
+                <span class="scope-ch ch-cyan">CH1: CAN-H (3.5V)</span>
+                <span class="scope-ch ch-diff" id="scope-diff-pill">ΔV: 2.0V (Dominant)</span>
+                <span class="scope-ch ch-yellow">CH2: CAN-L (1.5V)</span>
+              </div>
+              <canvas id="oscilloscope-canvas"></canvas>
+              <div class="scope-probe-overlay" id="scope-probe-overlay">
+                <div class="scope-probe-cursor" id="scope-probe-cursor">
+                  <span class="scope-probe-badge" id="scope-probe-badge">PROBE: 3.50V</span>
+                </div>
+              </div>
+              <div class="scope-footer-overlay">
+                <span id="sim-legend-volt">Differential: 2.0V ΔV (Nominal)</span>
+                <span id="sim-legend-term">120Ω Terminated</span>
+              </div>
+            </div>
+
+            <!-- Plain-English Real-Time Explainer Card -->
+            <div class="scanner-explainer-card" id="sim-explainer">
+              <div class="explainer-badge-row">
+                <span class="explainer-pill" id="sim-explain-pill">
+                  <span class="explainer-dot"></span>
+                  <span id="sim-explain-status">Live Vehicle Insight</span>
+                </span>
+                <span class="explainer-mode" id="sim-explain-mode">Plain English Mode</span>
+              </div>
+              <h4 class="explainer-headline" id="sim-explain-title">Network Healthy: Vehicle Computers Talking Freely</h4>
+              <p class="explainer-text" id="sim-explain-desc">
+                All onboard computers are communicating continuously without error. The green and yellow wave lines show clean differential signals transferring sensor data at 500,000 bits per second.
+              </p>
+            </div>
+          </div>
+
+          <!-- Modern Control Buttons -->
+          <div class="scanner-controls-modern">
+            <button type="button" class="scanner-btn" id="sim-scan-btn" title="Run diagnostic sweep on all onboard ECUs">
+              <div class="btn-icon-circle">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              </div>
+              <div class="btn-text-block">
+                <span class="btn-primary-label">Run Scan</span>
+                <span class="btn-sub-label">Check ECU health</span>
+              </div>
+            </button>
+
+            <button type="button" class="scanner-btn" id="sim-fault-btn" title="Simulate physical CAN-H wire touching metal chassis">
+              <div class="btn-icon-circle">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+              </div>
+              <div class="btn-text-block">
+                <span class="btn-primary-label">Inject Short</span>
+                <span class="btn-sub-label">Simulate wire fault</span>
+              </div>
+            </button>
+
+            <button type="button" class="scanner-btn" id="sim-clear-btn" title="Clear trouble codes and reboot vehicle computers">
+              <div class="btn-icon-circle">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+              </div>
+              <div class="btn-text-block">
+                <span class="btn-primary-label">Clear DTC</span>
+                <span class="btn-sub-label">Reset &amp; reboot car</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. CERTIFICATIONS & CREDENTIALS
+       ========================================================================= -->
+  <section id="certifications" class="section" style="background:var(--color-surface-dim);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title smooth-reveal">Certifications &amp; Credentials</h2>
+        <p class="section-subtitle">Verified milestones across machine learning, cloud architecture, and technical diagnostics.</p>
+      </div>
+
+      <div class="certs-grid">
+        <div class="cert-card smooth-reveal reveal-delay-1" tabindex="0">
+          <div class="cert-icon">
+            <img src="assets/images/aws_logo.svg" alt="Amazon Web Services" class="cert-img-logo">
+          </div>
+          <h4 class="cert-title">AWS Machine Learning Foundations</h4>
+          <span class="cert-issuer">Amazon Web Services</span>
+        </div>
+
+        <div class="cert-card smooth-reveal reveal-delay-2" tabindex="0">
+          <div class="cert-icon">
+            <img src="assets/images/microsoft_logo.svg" alt="Microsoft Learn" class="cert-img-logo">
+          </div>
+          <h4 class="cert-title">Microsoft Applied AI &amp; Cloud</h4>
+          <span class="cert-issuer">Microsoft Learn</span>
+        </div>
+
+        <div class="cert-card smooth-reveal reveal-delay-3" tabindex="0">
+          <div class="cert-icon cert-icon-nptel">
+            <img src="assets/images/nptel_logo.jpg" alt="NPTEL - IIT Kharagpur" class="cert-img-logo">
+          </div>
+          <h4 class="cert-title">Cloud Computing</h4>
+          <span class="cert-issuer">NPTEL (IIT Kharagpur)</span>
+        </div>
+
+        <div class="cert-card smooth-reveal reveal-delay-4" tabindex="0">
+          <div class="cert-icon cert-icon-nptel">
+            <img src="assets/images/nptel_logo.jpg" alt="NPTEL - IIT Kharagpur" class="cert-img-logo">
+          </div>
+          <h4 class="cert-title">Introduction to Internet of Things</h4>
+          <span class="cert-issuer">NPTEL (IIT Kharagpur)</span>
+        </div>
+
+        <div class="cert-card smooth-reveal reveal-delay-5" tabindex="0">
+          <div class="cert-icon cert-icon-carsonly">
+            <img src="assets/images/carsonly_logo.png" alt="Cars Only Automotive Diagnostics" class="cert-img-logo">
+          </div>
+          <h4 class="cert-title">Automotive Service &amp; Diagnostics</h4>
+          <span class="cert-issuer">Cars Only Service Certification</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. CONTACT & CONNECT BANNER (NOVA CURVED BOX)
+       ========================================================================= -->
+  <section id="contact" class="section contact-section-wrapper">
+    <div class="container">
+      <div class="contact-card-box">
+        <!-- Interactive Cyber Constellation Canvas & Rotating Ambient Plasma -->
+        <div class="contact-ambient-glow"></div>
+        <canvas id="contact-network-canvas" class="contact-network-canvas"></canvas>
+
+        <div class="contact-info-col">
+          <div class="contact-info-header">
+            <h3 class="section-title smooth-reveal">Let's Connect &amp; Build Something Exceptional.</h3>
+            <div class="contact-title-accent-bar"></div>
+            <p class="contact-lead-desc">
+              Whether you're hiring for software engineering roles, seeking an AI &amp; systems specialist, or looking to collaborate on high-performance products—I'm ready to connect.
+            </p>
+          </div>
+
+          <!-- Modern Connect Channels Grid -->
+          <div class="connect-links-grid">
+            <!-- GitHub Card -->
+            <a href="https://github.com/ImmanuvelStanley" target="_blank" rel="noopener noreferrer" class="connect-link-card" title="View GitHub Repositories (@ImmanuvelStanley)">
+              <div class="connect-card-icon icon-github">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </div>
+              <div class="connect-card-meta">
+                <span class="connect-card-name">GitHub</span>
+                <span class="connect-card-sub">@ImmanuvelStanley <span class="arrow-ext">&nearr;</span></span>
+              </div>
+            </a>
+
+            <!-- LinkedIn Card -->
+            <a href="https://www.linkedin.com/in/immanuvel-stanley-308881271/" target="_blank" rel="noopener noreferrer" class="connect-link-card" title="Connect on LinkedIn (Professional Network)">
+              <div class="connect-card-icon icon-linkedin">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path d="M7.12 6.002a1.62 1.62 0 1 1-3.24 0 1.62 1.62 0 0 1 3.24 0zM3.88 8.68h3.24V19.5H3.88V8.68zm5.28 0h3.11v1.48h.04c.43-.82 1.5-1.68 3.08-1.68 3.29 0 3.9 2.17 3.9 4.99V19.5h-3.24v-5.26c0-1.25-.02-2.87-1.75-2.87-1.75 0-2.02 1.37-2.02 2.78V19.5H9.16V8.68z" fill="#FFFFFF"/></svg>
+              </div>
+              <div class="connect-card-meta">
+                <span class="connect-card-name">LinkedIn</span>
+                <span class="connect-card-sub">Professional Network <span class="arrow-ext">&nearr;</span></span>
+              </div>
+            </a>
+
+            <!-- Direct Email Card -->
+            <a href="mailto:immanuvelstanley@gmail.com" class="connect-link-card email-channel-link" title="Send direct email to immanuvelstanley@gmail.com">
+              <div class="connect-card-icon icon-gmail">
+                <svg width="22" height="22" viewBox="52 42 88 66" fill="none" aria-hidden="true"><path fill="#4285F4" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6"/><path fill="#34A853" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15"/><path fill="#FBBC04" d="M120 48v26l20-15v-8c0-7.42-8.47-11.65-14.4-7.2"/><path fill="#EA4335" d="M72 74V48l24 18 24-18v26L96 92"/><path fill="#C5221F" d="M52 51v8l20 15V48l-5.6-4.2c-5.94-4.45-14.4-.22-14.4 7.2"/></svg>
+              </div>
+              <div class="connect-card-meta">
+                <span class="connect-card-name">Direct Email</span>
+                <span class="connect-card-sub" title="immanuvelstanley@gmail.com">immanuvelstanley@gmail.com <span class="arrow-ext">&nearr;</span></span>
+              </div>
+            </a>
+
+            <!-- Availability & Location Card -->
+            <div class="connect-link-card connect-static-card" title="Chennai, India &bull; Available Immediately">
+              <div class="connect-card-icon icon-maps">
+                <svg width="18" height="24" viewBox="0 0 92.3 132.3" fill="none" aria-hidden="true"><path fill="#1A73E8" d="M60.2 2.2C55.8.8 51 0 46.1 0 32 0 19.3 6.4 10.8 16.5l21.8 18.3L60.2 2.2z"/><path fill="#EA4335" d="M10.8 16.5C4.1 24.5 0 34.9 0 46.1c0 8.7 1.7 15.7 4.6 22l28-33.3-21.8-18.3z"/><path fill="#4285F4" d="M46.2 28.5c9.8 0 17.7 7.9 17.7 17.7 0 4.3-1.6 8.3-4.2 11.4 0 0 13.9-16.6 27.5-32.7-5.6-10.8-15.3-19-27-22.7L32.6 34.8c3.3-3.8 8.1-6.3 13.6-6.3"/><path fill="#FBBC04" d="M46.2 63.8c-9.8 0-17.7-7.9-17.7-17.7 0-4.3 1.5-8.3 4.1-11.3l-28 33.3c4.8 10.6 12.8 19.2 21 29.9l34.1-40.5c-3.3 3.9-8.1 6.3-13.5 6.3"/><path fill="#34A853" d="M59.1 109.2c15.4-24.1 33.3-35 33.3-63 0-7.7-1.9-14.9-5.2-21.3L25.6 98c2.6 3.4 5.3 7.3 7.9 11.3 9.4 14.5 6.8 23.1 12.8 23.1s3.4-8.7 12.8-23.2"/></svg>
+              </div>
+              <div class="connect-card-meta">
+                <span class="connect-card-name">Location &amp; Notice</span>
+                <span class="connect-card-sub">Chennai &bull; Immediate Joiner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Direct Verified Dispatcher (Connects directly to immanuvelstanley@gmail.com) -->
+        <form id="portfolio-contact-form" class="contact-form">
+
+          <div class="form-group">
+            <label for="contact-name" class="form-label">Your Name</label>
+            <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Henderson" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email" class="form-label">Email Address</label>
+            <input type="email" id="contact-email" name="email" class="form-input" placeholder="alex@company.com" required>
+          </div>
+
+          <div class="form-group custom-select-group">
+            <label for="contact-subject-trigger" class="form-label" id="inquiry-type-label">Inquiry Type</label>
+            
+            <div class="custom-select-wrap" id="custom-inquiry-select">
+              <!-- Synchronized native select for form submit & JS interop -->
+              <select id="contact-subject" name="inquiry_type" class="visually-hidden-select" tabindex="-1" aria-hidden="true">
+                <option value="Full-Time Software Role" selected>Full-Time Software / AI Role</option>
+                <option value="Elementro / Collaboration">Elementro or Tech Collaboration</option>
+                <option value="Automotive Diagnostics Service">Automotive Diagnostics Consultation</option>
+                <option value="General Conversation">General Conversation</option>
+              </select>
+
+              <!-- Interactive Custom Trigger Button -->
+              <button type="button" class="custom-select-trigger" id="contact-subject-trigger" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="inquiry-type-label contact-subject-trigger">
+                <span class="custom-select-display">
+                  <span class="select-option-dot dot-software"></span>
+                  <span class="custom-select-text">Full-Time Software / AI Role</span>
+                </span>
+                <svg class="select-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+
+              <!-- Animated Custom Options Menu -->
+              <div class="custom-select-dropdown" role="listbox" aria-labelledby="inquiry-type-label">
+                <div class="custom-select-option is-selected" role="option" aria-selected="true" data-value="Full-Time Software Role" tabindex="0">
+                  <div class="select-option-content">
+                    <span class="select-option-dot dot-software"></span>
+                    <span class="select-option-label">Full-Time Software / AI Role</span>
+                  </div>
+                  <svg class="select-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+
+                <div class="custom-select-option" role="option" aria-selected="false" data-value="Elementro / Collaboration" tabindex="0">
+                  <div class="select-option-content">
+                    <span class="select-option-dot dot-collab"></span>
+                    <span class="select-option-label">Elementro or Tech Collaboration</span>
+                  </div>
+                  <svg class="select-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+
+                <div class="custom-select-option" role="option" aria-selected="false" data-value="Automotive Diagnostics Service" tabindex="0">
+                  <div class="select-option-content">
+                    <span class="select-option-dot dot-auto"></span>
+                    <span class="select-option-label">Automotive Diagnostics Consultation</span>
+                  </div>
+                  <svg class="select-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+
+                <div class="custom-select-option" role="option" aria-selected="false" data-value="General Conversation" tabindex="0">
+                  <div class="select-option-content">
+                    <span class="select-option-dot dot-general"></span>
+                    <span class="select-option-label">General Conversation</span>
+                  </div>
+                  <svg class="select-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message" class="form-label">Message</label>
+            <textarea id="contact-message" name="message" class="form-textarea" placeholder="Tell me about your team, problem, or project..." required></textarea>
+          </div>
+
+          <button type="submit" class="ui-button ui-button-primary contact-submit-btn" id="submit-enquiry-btn">
+            <span class="ui-button-text-wrap">
+              <span class="ui-button-text-default">Send Enquiry Message &rarr;</span>
+              <span class="ui-button-text-hover">Send Details to Owner &rarr;</span>
+            </span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. SITE FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-content" style="justify-content:center;text-align:center;">
+      <p>&copy; 2026 Immanuvel Stanley A. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       11. CASE STUDY MODAL DIALOG
+       ========================================================================= -->
+  <div id="case-study-modal" class="modal-overlay">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div style="font-family:var(--font-mono);font-size:0.85rem;color:var(--color-brand-accent);">PROJECT DEEP DIVE</div>
+        <button type="button" id="modal-close-btn" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-content-body" id="modal-case-body">
+        <!-- Content injected dynamically via main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       12. DUAL RESUME VIEWER MODAL
+       ========================================================================= -->
+  <div id="resume-modal" class="modal-overlay">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="resume-tabs-nav">
+          <button type="button" class="resume-tab-btn active" data-resume="it">General IT &amp; AI Resume</button>
+          <button type="button" class="resume-tab-btn" data-resume="auto">Automotive Diagnostics Resume</button>
+        </div>
+        <button type="button" id="resume-modal-close-btn" class="modal-close-btn" aria-label="Close modal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-content-body">
+        <!-- IT Resume Panel -->
+        <div class="resume-frame-panel" data-panel="it">
+          <div class="resume-panel-header">
+            <div class="resume-title-wrap">
+              <div class="resume-title-row">
+                <h3 class="resume-modal-title">Immanuvel Stanley A</h3>
+                <span class="resume-track-badge">Software &amp; AI Track</span>
+              </div>
+            </div>
+            <a href="assets/resumes/Immanuvel_Stanley_Resume_General_IT.pdf" download="Immanuvel_Stanley_Resume_IT.pdf" class="ui-button ui-button-primary resume-download-cta">
+              <span class="ui-button-text-wrap">
+                <span class="ui-button-text-default">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:7px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  Download IT Resume (PDF)
+                </span>
+                <span class="ui-button-text-hover">Get PDF File &darr;</span>
+              </span>
+            </a>
+          </div>
+
+          <div class="resume-spec-card">
+            <div class="resume-spec-topbar">
+              <div class="resume-spec-heading">
+                <span class="resume-spec-pulse"></span>
+                <span>Executive Highlights</span>
+              </div>
+              <div class="resume-spec-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Verified Profile</span>
+              </div>
+            </div>
+
+            <div class="resume-spec-list">
+              <div class="resume-spec-item">
+                <div class="resume-spec-label">
+                  <span class="resume-spec-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                  </span>
+                  <span>Education</span>
+                </div>
+                <div class="resume-spec-value">
+                  <span><strong>B.E. Computer Science</strong> @ Saveetha Engineering College</span>
+                  <span class="resume-badge-date">2022–2026</span>
+                  <span class="resume-badge-cgpa">CGPA: 7.8</span>
+                </div>
+              </div>
+
+              <div class="resume-spec-item">
+                <div class="resume-spec-label">
+                  <span class="resume-spec-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                  </span>
+                  <span>Programming &amp; Dev</span>
+                </div>
+                <div class="resume-spec-value">
+                  <span class="resume-chip">Python</span>
+                  <span class="resume-chip">JavaScript</span>
+                  <span class="resume-chip">React.js</span>
+                  <span class="resume-chip">Next.js</span>
+                  <span class="resume-chip">HTML5/CSS3</span>
+                </div>
+              </div>
+
+              <div class="resume-spec-item">
+                <div class="resume-spec-label">
+                  <span class="resume-spec-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                  </span>
+                  <span>Databases &amp; Modeling</span>
+                </div>
+                <div class="resume-spec-value">
+                  <span class="resume-chip">Supabase</span>
+                  <span class="resume-chip">MySQL</span>
+                  <span class="resume-chip">MongoDB</span>
+                </div>
+              </div>
+
+              <div class="resume-spec-item">
+                <div class="resume-spec-label">
+                  <span class="resume-spec-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                  </span>
+                  <span>Tools &amp; Concepts</span>
+                </div>
+                <div class="resume-spec-value">
+                  <span class="resume-chip">Git / GitHub</span>
+                  <span class="resume-chip">RESTful APIs</span>
+                  <span class="resume-chip">Figma (UI/UX)</span>
+                </div>
+              </div>
+
+              <div class="resume-spec-item">
+                <div class="resume-spec-label">
+                  <span class="resume-spec-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
+                  </span>
+                  <span>Featured Projects</span>
+                </div>
+                <div class="resume-spec-value">
+                  <a href="https://codeplus-two.vercel.app" target="_blank" rel="noopener noreferrer" class="resume-app-link">CODEPLUS <span class="resume-app-note">(Coding &amp; DSA Platform)</span></a>
+                  <a href="https://auratrade.in" target="_blank" rel="noopener noreferrer" class="resume-app-link">Auratrade <span class="resume-app-note">(Trading Screener)</span></a>
+                  <a href="https://elementro.dev" target="_blank" rel="noopener noreferrer" class="resume-app-link">Elementro <span class="resume-app-note">(Component Editor)</span></a>
+                </div>
+              </div>
+
+              <div class="resume-spec-item">
+                <div class="resume-spec-label">
+                  <span class="resume-spec-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  </span>
+                  <span>Work History</span>
+                </div>
+                <div class="resume-spec-value">
+                  <span><strong>UI/UX Designer Intern</strong> @ Retech Solutions, Chennai</span>
+                  <span class="resume-badge-date">Jun–Jul 2024</span>
+                </div>
+              </div>
+
+              <div class="resume-spec-item">
+                <div class="resume-spec-label">
+                  <span class="resume-spec-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                  </span>
+                  <span>Certifications</span>
+                </div>
+                <div class="resume-spec-value">
+                  <span class="resume-chip">Cloud Computing (NPTEL)</span>
+                  <span class="resume-chip">IoT (NPTEL)</span>
+                  <span class="resume-chip">AWS ML Foundations</span>
+                  <span class="resume-chip">Microsoft Applied AI</span>
+                  <span class="resume-chip">Dynamic Public Speaking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Automotive Resume Panel -->
+        <div class="resume-frame-panel" data-panel="auto" style="display:none;">
+          <div class="resume-panel-header">
+            <div class="resume-title-wrap">
+              <div class="resume-title-row">
+                <h3 class="resume-modal-title">Immanuvel Stanley A</h3>
+                <span class="resume-track-badge">Automotive &amp; Systems Track</span>
+              </div>
+            </div>
+            <a href="assets/resumes/Immanuvel_Stanley_Resume_Automotive.pdf" download="Immanuvel_Stanley_Resume_Automotive.pdf" class="ui-button ui-button-brown resume-download-cta">
+              <span class="ui-button-text-wrap">
+                <span class="ui-button-text-default">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:7px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  Download Automotive Resume
+                </span>
+                <span class="ui-button-text-hover">Get Auto PDF &darr;</span>
+              </span>
+            </a>
+          </div>
+
+          <div class="resume-spec-card">
+            <div class="resume-spec-topbar">
+              <div class="resume-spec-heading">
+                <span class="resume-spec-pulse"></span>
+                <span>Automotive Service Highlights</span>
+              </div>
+              <div class="resume-spec-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Field Verified</span>
+              </div>
+            </div>
+
+            <div class="resume-spec-list">
+              <div class="resume-spec-item">
+                <div class="resume-spec-label">
+                  <span class="resume-spec-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                  </span>
+                  <span>Specialization</span>
+                </div>
+                <div class="resume-spec-value">
+                  <span class="resume-chip">Electrical Fault-Finding</span>
+                  <span class="resume-chip">OBD-II Scanning</span>
+                  <span class="resume-chip">Wiring Loom Diagnostics</span>
+                </div>
+              </div>
+
+              <div class="resume-spec-item">
+                <div class="resume-spec-label">
+                  <span class="resume-spec-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                  </span>
+                  <span>Protocols</span>
+                </div>
+                <div class="resume-spec-value">
+                  <span class="resume-chip">CAN Bus High/Low Speed</span>
+                  <span class="resume-chip">K-Line</span>
+                  <span class="resume-chip">Digital Oscilloscope Signal Tracing</span>
+                </div>
+              </div>
+
+              <div class="resume-spec-item">
+                <div class="resume-spec-label">
+                  <span class="resume-spec-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  </span>
+                  <span>Certification</span>
+                </div>
+                <div class="resume-spec-value">
+                  <span><strong>Cars Only Certified</strong> Service &amp; Diagnostics Technician</span>
+                  <span class="resume-badge-cgpa" style="background:rgba(200,155,123,0.15);color:var(--color-brand-accent);border-color:rgba(200,155,123,0.3);">Certified Specialist</span>
+                </div>
+              </div>
+
+              <div class="resume-spec-item">
+                <div class="resume-spec-label">
+                  <span class="resume-spec-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                  </span>
+                  <span>Systems Analyzed</span>
+                </div>
+                <div class="resume-spec-value">
+                  <span class="resume-chip">ECU Sensor PIDs</span>
+                  <span class="resume-chip">Alternator Charging Circuits</span>
+                  <span class="resume-chip">Relay Harnesses</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       13. COMMAND PALETTE (CMD+K / CTRL+K DIALOG)
+       ========================================================================= -->
+  <div id="cmd-palette" class="cmd-palette-backdrop">
+    <div class="cmd-palette-dialog">
+      <div class="cmd-input-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="cmd-palette-input" class="cmd-input" placeholder="Type a command or jump to section..." autocomplete="off">
+        <kbd class="cmd-shortcut-kbd">ESC</kbd>
+      </div>
+      <div class="cmd-list" id="cmd-palette-list">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="cmd-footer">
+        <span>Navigate: <kbd class="cmd-shortcut-kbd">&uarr;</kbd> <kbd class="cmd-shortcut-kbd">&darr;</kbd></span>
+        <span>Select: <kbd class="cmd-shortcut-kbd">&crarr;</kbd></span>
+        <span>Press <kbd class="cmd-shortcut-kbd">ESC</kbd> to close</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js?v=9.2"></script>
+</body>
+</html>

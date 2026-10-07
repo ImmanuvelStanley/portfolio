@@ -1,0 +1,10 @@
+# Development Scratch Files & Debug Screenshots
+scratch/
+.system_generated/
+*.log
+
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
